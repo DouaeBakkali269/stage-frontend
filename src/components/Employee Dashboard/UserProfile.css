@@ -1,0 +1,180 @@
+
+.container {
+    background-color: var(--template-palette-background-paper);
+    padding: 30px;
+    border-radius: var(--template-shape-borderRadius);
+    box-shadow: var(--template-shadow-4);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 50px;
+    max-width: 900px;
+    font-family: var(--template-typography-fontFamily); /* Conform to theme's font */
+}
+
+/* Section titles */
+.container h1, .container h2 {
+    font-size: var(--template-typography-h4-fontSize); /* Typography from theme */
+    font-weight: var(--template-typography-h4-fontWeight); /* Weight from theme */
+    font-family: var(--template-typography-h4-fontFamily); /* Ensure the font family is applied */
+    color: var(--template-palette-text-primary);
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+/* Line separator */
+.container hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--template-palette-divider);
+    margin: 20px 0;
+}
+/* Form rows */
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.row .col {
+    flex: 0 0 48%; /* Each column will take up 48% of the row's width */
+    margin-bottom: 20px;
+}
+
+.row .col:last-child {
+    margin-right: 0;
+}
+
+/* Align label and input on the same line */
+.row label {
+    font-weight: var(--template-typography-body1-fontWeight); 
+    font-family: var(--template-typography-fontFamily); 
+    font-size: var(--template-typography-body1-fontSize);
+    margin-right: 10px;
+    flex-shrink: 0;
+    display: inline-block;
+    min-width: 120px;
+}
+
+.row input {
+    width: 60%;
+    flex: 1;
+    padding: 10px;
+    font-size: var(--template-typography-body1-fontSize);
+    color: var(--template-palette-text-primary);
+    border: 1px solid var(--template-palette-divider);
+    border-radius: var(--template-shape-borderRadius);
+    background-color: var(--template-palette-background-default);
+    font-family: var(--template-typography-fontFamily);
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+
+
+.row input:focus {
+    border-color: var(--template-palette-primary-main);
+    background-color: var(--template-palette-background-paper);
+}
+
+/* Buttons */
+.btn {
+    background-color:#68B884;
+    border: none;
+    padding: 12px 25px;
+    font-size: var(--template-typography-button-fontSize);
+    font-weight: var(--template-typography-button-fontWeight);
+    border-radius: var(--template-shape-borderRadius);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: var(--template-shadow-2);
+    text-align: center;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: var(--template-palette-primary-dark);
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin-right: 0;
+    }
+}
+
+/* Change password section */
+.change-password {
+  
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: var(--template-palette-background-paper);
+    border-radius: var(--template-shape-borderRadius);
+    box-shadow: var(--template-shadow-2);
+}
+
+.change-password h1 {
+    font-size: var(--template-typography-h6-fontSize);
+    font-weight: var(--template-typography-h6-fontWeight);
+    font-family: var(--template-typography-h6-fontFamily); /* Ensure font from theme */
+    color: var(--template-palette-text-primary);
+    margin-bottom: 10px;
+}
+
+.change-password label {
+    font-size: var(--template-typography-body2-fontSize);
+    font-weight: var(--template-typography-fontWeightMedium);
+    font-family: var(--template-typography-fontFamily); /* Font family from theme */
+    margin-bottom: 8px;
+    margin-right: 10px;
+}
+
+.change-password input {
+    width: 60%;
+    flex: 1;
+    padding: 10px;
+    font-size: var(--template-typography-body1-fontSize);
+    color: var(--template-palette-text-primary);
+    border: 1px solid var(--template-palette-divider);
+    border-radius: var(--template-shape-borderRadius);
+    background-color: var(--template-palette-background-default);
+    font-family: var(--template-typography-fontFamily);
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.change-password input:focus {
+    border-color: var(--template-palette-primary-main);
+    outline: none;
+}
+
+.change-password .btn {
+    background-color:#68B884;
+    border: none;
+    padding: 12px 25px;
+    font-size: var(--template-typography-button-fontSize);
+    font-weight: var(--template-typography-button-fontWeight);
+    border-radius: var(--template-shape-borderRadius);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: var(--template-shadow-2);
+    text-align: center;
+    display: inline-block;
+}
+
+.change-password .btn:hover {
+    background-color: var(--template-palette-primary-dark);
+}
+
+.change-password hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--template-palette-divider);
+    margin: 10px 0;
+}
